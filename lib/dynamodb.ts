@@ -8,7 +8,7 @@ import { DynamoDBDocumentClient, PutCommand, GetCommand, QueryCommand } from "@a
 // AWS_SECRET_ACCESS_KEY
 
 const client = new DynamoDBClient({
-  region: process.env.AWS_REGION,
+  region: "us-east-1",
 })
 
 const docClient = DynamoDBDocumentClient.from(client)
